@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddNewItemControllerDelegate {
 
     @IBOutlet var tableView: UITableView!
 
@@ -31,6 +31,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let label = tableView.viewWithTag(1) as! UILabel
         label.text = labels[indexPath.row]
         return cell
+    }
+
+    func addNewItem(item: String) {
+        print("***" + item)
     }
 
 }

@@ -139,6 +139,9 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="add:" destination="Nrx-dp-HmM" eventType="touchUpInside" id="Lu7-Ni-cEg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yx8-hQ-wfl">
                                 <rect key="frame" x="141" y="220" width="92" height="34"/>
@@ -163,6 +166,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="8gk-Cd-hVm" secondAttribute="trailing" id="uql-gn-cTn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="Zfi-QY-8q5" id="MX7-2F-YzQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3va-qT-sey" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
