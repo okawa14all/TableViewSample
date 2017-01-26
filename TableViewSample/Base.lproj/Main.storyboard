@@ -83,7 +83,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFB-qz-if9"/>
+                                    <segue destination="Nrx-dp-HmM" kind="presentation" id="Z13-i6-ZsW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,6 +103,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q2d-vD-Nav">
+            <objects>
+                <viewController id="Nrx-dp-HmM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SxG-St-EWR"/>
+                        <viewControllerLayoutGuide type="bottom" id="QQh-9i-Jp9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D7O-IZ-O2X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3va-qT-sey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="52"/>
         </scene>
     </scenes>
 </document>

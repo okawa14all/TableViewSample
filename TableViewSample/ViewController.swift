@@ -10,10 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBAction func buttonTapped(_ sender: Any) {
-        print("Button tapped!")
-    }
-
     @IBOutlet var tableView: UITableView!
 
     let labels = ["label1", "label2", "label3"]
