@@ -13,6 +13,7 @@
 		623023E81E35C8D1004872B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623023E71E35C8D1004872B6 /* Assets.xcassets */; };
 		623023EB1E35C8D1004872B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623023E91E35C8D1004872B6 /* LaunchScreen.storyboard */; };
 		624FFEC61E39DA9A00A6BD0F /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624FFEC51E39DA9A00A6BD0F /* BorderButton.swift */; };
+		624FFEC81E39E71B00A6BD0F /* AddNewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624FFEC71E39E71B00A6BD0F /* AddNewItemController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		623023EA1E35C8D1004872B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		623023EC1E35C8D1004872B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624FFEC51E39DA9A00A6BD0F /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		624FFEC71E39E71B00A6BD0F /* AddNewItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				623023E91E35C8D1004872B6 /* LaunchScreen.storyboard */,
 				623023EC1E35C8D1004872B6 /* Info.plist */,
 				624FFEC51E39DA9A00A6BD0F /* BorderButton.swift */,
+				624FFEC71E39E71B00A6BD0F /* AddNewItemController.swift */,
 			);
 			path = TableViewSample;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				623023E31E35C8D1004872B6 /* ViewController.swift in Sources */,
 				623023E11E35C8D1004872B6 /* AppDelegate.swift in Sources */,
 				624FFEC61E39DA9A00A6BD0F /* BorderButton.swift in Sources */,
+				624FFEC81E39E71B00A6BD0F /* AddNewItemController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

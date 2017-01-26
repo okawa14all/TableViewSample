@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -104,10 +105,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Add New Item Controller-->
         <scene sceneID="Q2d-vD-Nav">
             <objects>
-                <viewController id="Nrx-dp-HmM" sceneMemberID="viewController">
+                <viewController id="Nrx-dp-HmM" customClass="AddNewItemController" customModule="TableViewSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SxG-St-EWR"/>
                         <viewControllerLayoutGuide type="bottom" id="QQh-9i-Jp9"/>
@@ -115,7 +116,52 @@
                     <view key="view" contentMode="scaleToFill" id="D7O-IZ-O2X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-QY-8q5">
+                                <rect key="frame" x="16" y="120" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gk-Cd-hVm" customClass="BorderButton" customModule="TableViewSample" customModuleProvider="target">
+                                <rect key="frame" x="16" y="170" width="343" height="30"/>
+                                <state key="normal" title="追加">
+                                    <color key="titleColor" red="0.88891973349999998" green="0.43735404649999998" blue="0.20997488950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.88891973349999998" green="0.43735404649999998" blue="0.20997488950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yx8-hQ-wfl">
+                                <rect key="frame" x="141" y="220" width="92" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="キャンセル">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="Nrx-dp-HmM" eventType="touchUpInside" id="oBj-yB-OWj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zfi-QY-8q5" firstAttribute="leading" secondItem="D7O-IZ-O2X" secondAttribute="leadingMargin" id="5oB-4q-RMT"/>
+                            <constraint firstItem="8gk-Cd-hVm" firstAttribute="leading" secondItem="D7O-IZ-O2X" secondAttribute="leadingMargin" id="AQo-CI-Lqn"/>
+                            <constraint firstItem="Yx8-hQ-wfl" firstAttribute="top" secondItem="8gk-Cd-hVm" secondAttribute="bottom" constant="20" id="cQ1-B8-stA"/>
+                            <constraint firstItem="8gk-Cd-hVm" firstAttribute="top" secondItem="Zfi-QY-8q5" secondAttribute="bottom" constant="20" id="crT-WC-iTu"/>
+                            <constraint firstItem="Zfi-QY-8q5" firstAttribute="top" secondItem="SxG-St-EWR" secondAttribute="bottom" constant="100" id="e8N-zO-GUJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zfi-QY-8q5" secondAttribute="trailing" id="nvg-2l-geh"/>
+                            <constraint firstItem="Yx8-hQ-wfl" firstAttribute="centerX" secondItem="D7O-IZ-O2X" secondAttribute="centerX" id="r2c-dO-VeC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8gk-Cd-hVm" secondAttribute="trailing" id="uql-gn-cTn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3va-qT-sey" userLabel="First Responder" sceneMemberID="firstResponder"/>
