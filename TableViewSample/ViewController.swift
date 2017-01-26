@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SampleCell", for: indexPath)
-        let label = tableView.viewWithTag(1) as! UILabel
+        let label = cell.viewWithTag(1) as! UILabel
         label.text = labels[indexPath.row]
         return cell
     }
