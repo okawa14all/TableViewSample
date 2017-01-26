@@ -60,11 +60,25 @@
                                     <constraint firstItem="Vr0-za-fyf" firstAttribute="centerX" secondItem="2GQ-Ak-S9K" secondAttribute="centerX" id="AAv-1c-qhW"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kop-hK-xUw">
+                                <rect key="frame" x="162.5" y="607" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.88891973350253806" green="0.43735404653511578" blue="0.20997488951422671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GUC-uU-VmQ"/>
+                                    <constraint firstAttribute="width" constant="50" id="PBP-PT-Bzp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2GQ-Ak-S9K" secondAttribute="trailing" id="0nz-Jl-of0"/>
+                            <constraint firstAttribute="bottom" secondItem="kop-hK-xUw" secondAttribute="bottom" constant="10" id="2QS-Ra-MKe"/>
                             <constraint firstItem="2GQ-Ak-S9K" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="8gq-sU-kXd"/>
+                            <constraint firstItem="kop-hK-xUw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EYD-c8-6gb"/>
                             <constraint firstItem="2GQ-Ak-S9K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ukl-BB-cd7"/>
                             <constraint firstItem="2GQ-Ak-S9K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vEA-dJ-YfG"/>
                         </constraints>
