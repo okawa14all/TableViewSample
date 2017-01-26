@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet var tableView: UITableView!
 
-    let labels = ["label1", "label2", "label3"]
+    var labels = ["item 1", "item 2", "item 3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +35,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func addNewItem(item: String) {
         print("***" + item)
+        labels.append(item)
+        self.tableView.reloadData()
     }
 
 }
